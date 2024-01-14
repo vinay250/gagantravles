@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagana Travels</title>
+    <link rel="stylesheet" href="gk.css">
+    <style>
+        /* Your existing styles go here */
+
+        /* Additional styles for the extended structure */
+        .latest-news-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .bookings-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .booking-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .booking-option {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .booking-option:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px; /* Adjust the size as needed */
+        }
+        nav ul li a {
+            color: #fff; /* Default color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s; /* Smooth transition effect */
+        }
+    
+        nav ul li a:hover {
+            color: #ffcc00; /* Color when hovered, adjust as needed */
+        }
+    
+        nav ul li a:visited {
+            color: #3366cc; /* Color for visited links, adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="GTT Logo.jpg" alt="Gagana Travels Logo" class="logo">
+        <h1>Welcome to Gagana Tours & Travels</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://www.irctc.co.in/nget/train-search" target="_blank">Train Booking</a></li>
+            <li><a href="https://www.ksrtc.in/oprs-web/" target="_blank">Bus Booking</a></li>
+            <li><a href="https://in.via.com/" target="_blank">Airline Booking</a></li>
+            <li><a href="https://www.booking.com/index.en-gb.html?aid=2336990;label=en-in-booking-desktop-FNUJyR1iYZtYeFdNgHudMQS652804038422:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-17218370:lp1007768:li:dec:dm;ws=&gad_source=1&gclid=CjwKCAiAqY6tBhAtEiwAHeRopWn4dE1u8VSdkI65D4a6REskc9qRyM4g9uUFacXvmp2OJN9SBXem4BoCXKsQAvD_BwE" target="_blank">Hotel Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="calculator.html" target="_blank">Calculator</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://www.onlinesbi.sbi/">online paymets</a>
+        </ul>
+    </nav>
+    <main>
+        <section class="latest-news-section">
+            <h2>Best wishes on your new adventure</h2>
+            <marquee behavior="scroll" scrolldelay="100" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <!-- News content goes here -->
+                "As you embark on this journey, may your path be clear, your travels be safe, and your experiences be extraordinary."
+            </marquee>
+        </section>
+        <section class="bookings-section">
+            <h2>Bookings</h2>
+            <div class="booking-options">
+                <a href="https://www.irctc.co.in/nget/train-search" class="booking-option" target="_blank">Train Booking</a>
+                <a href="https://www.ksrtc.in/oprs-web/" class="booking-option" target="_blank">Bus Booking</a>
+                <a href="https://in.via.com/" class="booking-option" target="_blank">Airline Booking</a>
+                <a href="https://www.tirumala.org/SpecialEntryDarshan.aspx" class="booking-option" target="_blank">Triputi Darshan Booking</a>
+            </div>
+        </section>
+        <!-- Add your content for airline and hotel bookings here -->
+    </main>
+    <footer>
+        &copy; 2024 Gagana Travels
+    </footer>
+</body>
+</html>

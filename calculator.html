@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #calculator {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            width: 48px;
+            height: 48px;
+            margin: 5px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .operator {
+            background-color: #ff8c00; /* Orange background for operators */
+        }
+
+        .number {
+            background-color: #4caf50; /* Green background for numbers */
+        }
+
+        .equals {
+            background-color: #008CBA; /* Blue background for equals sign */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <br>
+        <input type="button" class="operator" value="+" onclick="addToDisplay('+')">
+        <input type="button" class="operator" value="-" onclick="addToDisplay('-')">
+        <input type="button" class="operator" value="*" onclick="addToDisplay('*')">
+        <input type="button" class="operator" value="/" onclick="addToDisplay('/')">
+        <br>
+        <input type="button" class="number" value="1" onclick="addToDisplay('1')">
+        <input type="button" class="number" value="2" onclick="addToDisplay('2')">
+        <input type="button" class="number" value="3" onclick="addToDisplay('3')">
+        <br>
+        <input type="button" class="number" value="4" onclick="addToDisplay('4')">
+        <input type="button" class="number" value="5" onclick="addToDisplay('5')">
+        <input type="button" class="number" value="6" onclick="addToDisplay('6')">
+        <br>
+        <input type="button" class="number" value="7" onclick="addToDisplay('7')">
+        <input type="button" class="number" value="8" onclick="addToDisplay('8')">
+        <input type="button" class="number" value="9" onclick="addToDisplay('9')">
+        <br>
+        <input type="button" class="number" value="0" onclick="addToDisplay('0')">
+        <input type="button" class="equals" value="=" onclick="calculate()">
+        <input type="button" class="operator" value="C" onclick="clearDisplay()">
+    </div>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function calculate() {
+            try {
+                document.getElementById('display').value = eval(document.getElementById('display').value);
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+    </script>
+</body>
+</html>
